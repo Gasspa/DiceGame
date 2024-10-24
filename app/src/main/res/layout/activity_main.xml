@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    tools:context=".MainActivity">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gra w kości. Autor: Kacper Maciaszek"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:padding="3dp"
+        android:background="@color/brown"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/buttonIncrement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:background="@color/chocolate"
+        android:textColor="@color/white"
+        app:cornerRadius="0px"
+        android:text="RZUĆ KOŚĆMI" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="13dp">
+
+        <TextView
+            android:id="@+id/P1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="9dp"
+            android:text="?"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/P2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="9dp"
+            android:text="?"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/P3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="9dp"
+            android:text="?"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/P4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="9dp"
+            android:text="?"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/P5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="9dp"
+            android:text="?"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:textSize="50sp" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/wynik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wynik tego losowania:"
+        android:textSize="19sp" />
+    <TextView
+        android:id="@+id/wynik2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wynik gry:"
+        android:textSize="19sp"/>
+
+    <TextView
+        android:id="@+id/rzutyCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liczba rzutów: 0"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:background="@color/chocolate"
+        android:textColor="@color/white"
+        app:cornerRadius="0px"
+        android:text="RESETUJ WYNIK" />
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
